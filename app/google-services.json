@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "60072103296",
+    "project_id": "profitverse-bbb73",
+    "storage_bucket": "profitverse-bbb73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60072103296:android:c3c52f913faa8fc701c565",
+        "android_client_info": {
+          "package_name": "com.kekas.fitverse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60072103296-bu6ekf4lgv2ar3dn7tl8sm4et4imrfm1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADXTQjKdPmOznC5QD4BWMZ13y63RMtebY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60072103296-bu6ekf4lgv2ar3dn7tl8sm4et4imrfm1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

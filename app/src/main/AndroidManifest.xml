@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/profitverse"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/profitverse"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Fitverse"
+        tools:targetApi="30">
+        <activity
+            android:name=".RecuperarContrasena"
+            android:exported="false" />
+        <activity
+            android:name=".EditarSuscripcion"
+            android:exported="false" />
+        <activity
+            android:name=".ConsultaRutinaUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".VerRutinasUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".VerCoachUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".Suscripciones"
+            android:exported="false" />
+        <activity
+            android:name=".Gyms"
+            android:exported="false" />
+        <activity
+            android:name=".VerAlumnoDueno"
+            android:exported="false" />
+        <activity
+            android:name=".AfiliarUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".InformacionGimnasio"
+            android:exported="false" />
+        <activity
+            android:name=".MapaGyms"
+            android:exported="false" />
+        <activity
+            android:name=".InformacionUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".Usuario"
+            android:exported="false" />
+        <activity
+            android:name=".DatosUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".EditarCargo"
+            android:exported="false" />
+        <activity
+            android:name=".AfiliarCoach"
+            android:exported="false" />
+        <activity
+            android:name=".VerCoachDueno"
+            android:exported="false" />
+        <activity
+            android:name=".EditarPlan"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarPlan"
+            android:exported="false" />
+        <activity
+            android:name=".Planes"
+            android:exported="false" />
+        <activity
+            android:name=".EditarGym"
+            android:exported="false" />
+        <activity
+            android:name=".ConsultarGym"
+            android:exported="false" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarGym"
+            android:exported="false" />
+        <activity
+            android:name=".Gimnasios"
+            android:exported="false" />
+        <activity
+            android:name=".InformacionDueno"
+            android:exported="false" />
+        <activity
+            android:name=".Dueno"
+            android:exported="false" />
+        <activity
+            android:name=".DatosDueno"
+            android:exported="false" />
+        <activity
+            android:name=".EditarEjercicio"
+            android:exported="false" />
+        <activity
+            android:name=".EditarRutina"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarEjercicio"
+            android:exported="false" />
+        <activity
+            android:name=".ConsultaRutina"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarRutina"
+            android:exported="false" />
+        <activity
+            android:name=".Rutinas"
+            android:exported="false" />
+        <activity
+            android:name=".Informacion"
+            android:exported="false" />
+        <activity
+            android:name=".DatosCoach"
+            android:exported="false" />
+        <activity
+            android:name=".Coach"
+            android:exported="false" />
+        <activity
+            android:name=".SeleccionUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".IniciarSesion"
+            android:exported="false" />
+        <activity
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.auth.api.signin.API_KEY"
+            android:value="AIzaSyADXTQjKdPmOznC5QD4BWMZ13y63RMtebY" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDKRVOnjL--0wWjLd5lOAC7hIfnNnvcyl4" />
+    </application>
+
+</manifest>

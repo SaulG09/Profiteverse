@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registroCoach"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degradado"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <TextView
+        android:id="@+id/casiT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Editar ejercicio"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/cardViewCasi"
+        app:layout_constraintLeft_toLeftOf="@id/registroCoach"
+        app:layout_constraintRight_toRightOf="@id/registroCoach"
+        app:layout_constraintTop_toTopOf="@id/registroCoach"
+        app:layout_constraintVertical_chainStyle="packed">
+
+    </TextView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewCasi"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="48dp"
+        app:cardElevation="28dp"
+        app:layout_constraintBottom_toBottomOf="@id/registroCoach"
+        app:layout_constraintLeft_toLeftOf="@id/registroCoach"
+        app:layout_constraintRight_toRightOf="@id/registroCoach"
+        app:layout_constraintTop_toBottomOf="@+id/casiT"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:strokeColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/casiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="35dp"
+                android:gravity="center"
+                android:text="Ingresa los datos"
+                android:textColor="#424242"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/cardViewCasi"
+                app:layout_constraintLeft_toLeftOf="@id/registroCoach"
+                app:layout_constraintRight_toRightOf="@id/registroCoach"
+                app:layout_constraintTop_toTopOf="@id/registroCoach">
+
+            </TextView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cambiarFotoEjercicio"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="35dp"
+                android:backgroundTint="#B891F8"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="10dp"
+                app:strokeWidth="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/fotoEjercicioEd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gym">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="#B994FF"
+                app:strokeWidth="3dp">
+
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+
+                    android:id="@+id/textoNombreEjercicioEd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="@null"
+                    android:hint="Nombre del ejercicio"
+                    android:inputType="text"
+                    android:textColor="#424242"
+                    android:textColorHint="#666666"
+                    android:textSize="16dp">
+
+                </EditText>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="#9B6FEF"
+                app:strokeWidth="3dp">
+
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+
+                    android:id="@+id/textoDescripcionEjercicioEd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="@null"
+                    android:hint="Descripción"
+                    android:inputType="text"
+                    android:textColor="#424242"
+                    android:textColorHint="#666666"
+                    android:textSize="16dp">
+
+                </EditText>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="#4B13B2"
+                app:strokeWidth="3dp">
+
+                <EditText
+                    android:id="@+id/textoSeriesEjercicioEd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="@null"
+                    android:hint="Número de series"
+                    android:inputType="datetime"
+                    android:maxLength="2"
+                    android:textColor="#424242"
+                    android:textColorHint="#666666"
+                    android:textSize="16dp">
+
+                </EditText>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="#390992"
+                app:strokeWidth="3dp">
+
+                <EditText
+                    android:id="@+id/textoRepeticionesEjercicioEd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="@null"
+                    android:hint="Número de repeticiones"
+                    android:inputType="datetime"
+                    android:maxLength="2"
+                    android:textColor="#424242"
+                    android:textColorHint="#666666"
+                    android:textSize="16dp">
+
+                </EditText>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/botonAgregarEjercicioEd"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="6dp"
+                android:stateListAnimator="@null"
+                android:text="Editar"
+                android:textColor="#424242"
+                android:textSize="24dp"
+                app:backgroundTint="#DEC1FF"
+                app:cornerRadius="25dp">
+
+
+            </com.google.android.material.button.MaterialButton>
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

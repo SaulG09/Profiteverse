@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Rutinas">
+
+    <!-- LinearLayout con orientación vertical para organizar los elementos -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <!-- Card que muestra "Rutinas" en la parte superior -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:background="@drawable/gym"
+            android:id="@+id/fotoGymConsulta"
+            android:layout_height="280dp"
+            android:orientation="vertical">
+            <TextView
+                android:shadowColor="#80000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="14"
+                android:gravity="center"
+                android:id="@+id/nombreGymConsulta"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:singleLine="false"
+                android:ellipsize="none"
+                android:textSize="32dp"
+                android:text="Rutina">
+
+            </TextView>
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:id="@+id/mapaGymConsulta"
+                android:shadowColor="#80000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="14"
+                android:textSize="20dp"
+                android:text="Escribir aqui la rutina asociada para que apaarezca y se pueda ver"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:ellipsize="none">
+            </TextView>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:gravity="top|center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="50dp"
+                    app:cardCornerRadius="100dp"
+                    app:strokeWidth="0dp"
+                    android:id="@+id/borrarGym"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardElevation="10dp"
+                    android:layout_height="50dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <ImageView
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/eliminar">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="50dp"
+                    android:id="@+id/editarGym"
+                    android:layout_marginHorizontal="20dp"
+                    app:cardCornerRadius="100dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardElevation="10dp"
+                    app:strokeWidth="0dp"
+
+                    android:layout_height="50dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <ImageView
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/editar">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gymFotoFondo"
+
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="700dp">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gym2"
+                app:strokeWidth="0dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="42dp">
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/verPlanGym"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        app:cardCornerRadius="28dp"
+                        app:cardElevation="10dp"
+                        app:strokeWidth="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/gym2"
+                                app:tint="#4CAF50">
+
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Planes"
+                                android:textColor="#424242"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="24dp"
+                                android:layout_height="match_parent">
+
+                            </TextView>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/verCoachGym"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        app:cardCornerRadius="28dp"
+                        app:cardElevation="10dp"
+                        app:strokeWidth="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/usuarios"
+                                app:tint="#03A9F4">
+
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Coaches"
+                                android:textColor="#424242"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="24dp"
+                                android:layout_height="match_parent">
+
+                            </TextView>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/verUsuarioGym"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        app:cardCornerRadius="28dp"
+                        app:cardElevation="10dp"
+                        app:strokeWidth="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/usuarios"
+                                app:tint="#651EE9">
+
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Usuarios"
+                                android:textColor="#424242"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="24dp"
+                                android:layout_height="match_parent">
+
+                            </TextView>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coach"
+    android:background="@drawable/degradado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Coach">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:layout_marginTop="60dp"
+                app:strokeWidth="0dp"
+
+                app:cardCornerRadius="100dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/fotoCoach3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/coach">
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="50dp"
+                    app:cardCornerRadius="100dp"
+                    app:strokeWidth="0dp"
+                    android:id="@+id/botonVolverCoach"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardElevation="10dp"
+                    android:layout_height="50dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <ImageView
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/home">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="50dp"
+                    android:id="@+id/editarInfo2"
+                    android:layout_marginHorizontal="20dp"
+                    app:cardCornerRadius="100dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardElevation="10dp"
+                    app:strokeWidth="0dp"
+
+                    android:layout_height="50dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <ImageView
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/editar">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/botonCerrarSesion2"
+                    android:layout_width="50dp"
+                    android:layout_marginHorizontal="20dp"
+                    app:cardCornerRadius="100dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardElevation="10dp"
+                    app:strokeWidth="0dp"
+
+                    android:layout_height="50dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <ImageView
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/salir">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#FFFFFF"
+            app:strokeWidth="0dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="42dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                android:backgroundTint="#BFFFFFFF"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardElevation="10dp"
+app:strokeWidth="0dp"
+                    android:layout_margin="30dp"
+                    app:cardCornerRadius="28dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:background="@drawable/boton_degradado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+
+                            app:layout_constraintVertical_chainStyle="packed"
+                            android:layout_marginBottom="5dp"
+                            android:text="Coach"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="30dp"
+                            android:id="@+id/nombreCoach"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="30dp"
+                            android:layout_marginVertical="10dp">
+
+
+                        </TextView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    app:cardCornerRadius="42dp"
+                    android:layout_marginHorizontal="20dp"
+                    app:strokeWidth="3dp"
+                    app:strokeColor="#E6E6E6"
+                    android:layout_marginBottom="20dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="30dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Nombre"
+                            android:textStyle="bold"
+                            android:textColor="#2B2B2B"
+                            android:textSize="24dp">
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginHorizontal="30dp"
+                            android:id="@+id/infoNombreCoach"
+                            android:textColor="#2B2B2B"
+                            android:textSize="20dp">
+                        </TextView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    app:cardCornerRadius="42dp"
+                    android:layout_marginHorizontal="20dp"
+                    app:strokeWidth="3dp"
+                    app:strokeColor="#E6E6E6"
+                    android:layout_marginBottom="20dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="30dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Especialidad"
+                            android:textStyle="bold"
+                            android:textColor="#2B2B2B"
+                            android:textSize="24dp">
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginHorizontal="30dp"
+                            android:id="@+id/infoEspeCoach"
+                            android:textColor="#2B2B2B"
+                            android:textSize="20dp">
+                        </TextView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    app:cardCornerRadius="42dp"
+                    android:layout_marginHorizontal="20dp"
+                    app:strokeWidth="3dp"
+                    app:strokeColor="#E6E6E6"
+                    android:layout_marginBottom="20dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="30dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Telefono"
+                            android:textStyle="bold"
+                            android:textColor="#2B2B2B"
+                            android:textSize="24dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/infoTelCoach"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginHorizontal="30dp"
+                            android:textColor="#2B2B2B"
+                            android:textSize="20dp">
+                        </TextView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    app:cardCornerRadius="42dp"
+                    android:layout_marginHorizontal="20dp"
+                    app:strokeWidth="3dp"
+                    app:strokeColor="#E6E6E6"
+
+                    android:layout_marginBottom="20dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="30dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Usuario"
+                            android:textStyle="bold"
+                            android:textColor="#2B2B2B"
+                            android:textSize="24dp">
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginHorizontal="30dp"
+                            android:id="@+id/infoUserCoach"
+                            android:textColor="#2B2B2B"
+                            android:textSize="20dp">
+                        </TextView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    app:cardCornerRadius="42dp"
+                    android:layout_marginHorizontal="20dp"
+                    app:strokeWidth="3dp"
+                    app:strokeColor="#E6E6E6"
+
+                    android:layout_marginBottom="20dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="30dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Fecha de creación"
+                            android:textStyle="bold"
+                            android:textColor="#2B2B2B"
+                            android:textSize="24dp">
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginHorizontal="30dp"
+                            android:id="@+id/infoFechaCoach"
+                            android:textColor="#2B2B2B"
+                            android:textSize="20dp">
+                        </TextView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+            </ScrollView>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>]
+
+</ScrollView>
