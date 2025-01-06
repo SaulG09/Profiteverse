@@ -1,6 +1,6 @@
 # **Profitverse**
 
-Profitverse es una app diseñada para encontrar los gimnsasios más cercanos a tí. Ingresa como usuario, coach o dueño de gimnasio según tus necesidades.
+Profitverse es una app diseñada para encontrar los gimnasios más cercanos a ti. Ingresa como usuario, coach o dueño de gimnasio según tus necesidades.
 
 <div style="display: flex; justify-content: space-around; margin: auto; width: 50%;">
     <img src="https://github.com/user-attachments/assets/9b7645f1-557f-4ccc-bc3b-15eb9cee93e9" alt="Pantalla principal" width="150">
